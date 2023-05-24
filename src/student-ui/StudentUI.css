@@ -1,0 +1,31 @@
+.course-input {
+    text-align: center;
+}
+
+.submit {
+    margin-left: 20px;
+    margin-top: 12px;
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color: gray;
+}
+
+.curriculum-content {
+    margin-top: 20px;
+    width: 90%;
+    height: 90%;
+}
+
+.assign-points {
+    margin-left: 80px;
+    margin-top: 12px;
+    width: 174px;
+    height: 30px;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color: gray;
+}
