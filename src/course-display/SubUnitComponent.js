@@ -4,7 +4,7 @@ const SubUnitComponent = (props) => {
   return (
     <div style={{ margin: "20px", marginTop: "40px" }}>
       <div>
-        <h2>{props.SubunitData.name}</h2>
+        <h2>{props.SubunitData.Name}</h2>
       </div>
       <div className={styles["unit-component-container"]}>
         <div>
@@ -19,7 +19,7 @@ const SubUnitComponent = (props) => {
             />
           )}
         </div>
-        <div style={{ marginLeft: "20px" }}>{props.SubunitData.content}</div>
+        <div style={{ marginLeft: "20px" }}>{props.SubunitData.Description}</div>
       </div>
     </div>
   );

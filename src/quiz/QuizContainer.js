@@ -3,16 +3,10 @@ import Axios from "axios";
 import { Card } from "@material-ui/core";
 import QuizComponent from "./QuizComponent";
 
-const QuizContainer = () => {
-  const [data, setData] = useState({});
-
-  useEffect(() => {
-    Axios.get("https://api.jsonbin.io/v3/b/646e5795b89b1e2299a4246d").then(
-      (response) => {
-        setData(response.data.record);
-      }
-    );
-  }, []);
+const QuizContainer = (props) => {
+  const data = props.data;
+  
+  console.log({data})
 
   return data ? (
     Object.keys(data).map((item, index) => {

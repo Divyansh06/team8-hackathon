@@ -5,11 +5,9 @@ import StudentUI from "./student-ui/StudentUI";
 function App() {
   return (
     <div>
-      <QuizContainer />
-      {/* <CourseContainer /> */}
-      {/* <div className="student-ui">
+      <div className="student-ui">
         <StudentUI />
-      </div> */}
+      </div>
     </div>
   );
 }

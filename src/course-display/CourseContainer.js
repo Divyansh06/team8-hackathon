@@ -1,35 +1,15 @@
-import { useEffect, useState } from "react";
-import Axios from "axios";
-import UnitComponent from "./UnitComponent";
 import { Card } from "@material-ui/core";
+import SubUnitComponent from "./SubUnitComponent";
 
-const CourseContainer = () => {
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    Axios.get("https://api.jsonbin.io/v3/b/646e09f6b89b1e2299a3eda7").then(
-      (response) => {
-        setData(response.data.record);
-      }
-    );
-  }, []);
-
+const CourseContainer = (props) => {
   return (
     <>
-      <h1 style={{ margin: "20px" }}>Course</h1>
-      {data ? (
-        data.course.sections.map((item, index) => {
-          return (
-            <Card
-              style={{ margin: "20px", padding: "20px", marginTop: "40px" }}
-            >
-              <UnitComponent CourseData={item} key={String(index)} />
-            </Card>
-          );
-        })
-      ) : (
-        <div>No data</div>
-      )}
+      <h1 style={{ margin: "20px" }}>Course Content</h1>
+      {props.data.subtopics.map((item) => (
+        <Card style={{ margin: "20px", padding: "20px", marginTop: "40px" }}>
+          <SubUnitComponent SubunitData={{...item, video: 'https://share.synthesia.io/embeds/videos/535db557-8006-4baf-9cb0-aa2408efb204'}} />
+        </Card>
+      ))}
     </>
   );
 };

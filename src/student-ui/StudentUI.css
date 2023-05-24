@@ -1,11 +1,11 @@
 .course-input {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .submit {
     margin-left: 20px;
     margin-top: 12px;
-    width: 70px;
+    width: 100px;
     height: 30px;
     background-color: white;
     border-width: 1px;
@@ -15,7 +15,7 @@
 
 .curriculum-content {
     margin-top: 20px;
-    width: 90%;
+    width: 50%;
     height: 90%;
 }
 
