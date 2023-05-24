@@ -14,16 +14,23 @@ const CourseContainer = () => {
     );
   }, []);
 
-  return data ? (
-    data.course.sections.map((item, index) => {
-      return (
-        <Card style={{ margin: "20px", padding:'20px', marginTop: '40px' }}>
-          <UnitComponent CourseData={item} key={String(index)} />
-        </Card>
-      );
-    })
-  ) : (
-    <div>No data</div>
+  return (
+    <>
+      <h1 style={{ margin: "20px" }}>Course</h1>
+      {data ? (
+        data.course.sections.map((item, index) => {
+          return (
+            <Card
+              style={{ margin: "20px", padding: "20px", marginTop: "40px" }}
+            >
+              <UnitComponent CourseData={item} key={String(index)} />
+            </Card>
+          );
+        })
+      ) : (
+        <div>No data</div>
+      )}
+    </>
   );
 };
 
