@@ -6,7 +6,7 @@ const CourseContainer = (props) => {
     <>
       <h1 style={{ margin: "20px" }}>Course Content</h1>
       {props.data.subtopics.map((item) => (
-        <Card style={{ margin: "20px", padding: "20px", marginTop: "40px" }}>
+        <Card style={{ margin: "20px", padding: "20px", marginTop: "40px", width:'67%' }}>
           <SubUnitComponent SubunitData={{...item, video: 'https://share.synthesia.io/embeds/videos/535db557-8006-4baf-9cb0-aa2408efb204'}} />
         </Card>
       ))}

@@ -11,7 +11,7 @@ const QuizContainer = (props) => {
   return data ? (
     Object.keys(data).map((item, index) => {
       return (
-        <Card key={index} style={{ margin: "20px", padding:'20px', marginTop: '40px' }}>
+        <Card key={index} style={{ margin: "20px", padding:'20px', marginTop: '40px', width: '66%' }}>
             <h3>{item}</h3>
             <QuizComponent Quiz={data[item]} />
         </Card>
