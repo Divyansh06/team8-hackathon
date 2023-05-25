@@ -11,6 +11,7 @@
     border-width: 1px;
     border-radius: 7px;
     border-color: gray;
+    cursor: pointer;
 }
 
 .curriculum-content {
